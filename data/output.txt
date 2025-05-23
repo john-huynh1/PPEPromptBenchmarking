@@ -1,0 +1,448 @@
+OPENAI_PPE_PROMPT_1_TEMPLATE
+
+Frame (Frame)2024.08.04 - TDC08870 - AES - PPE (Optical).png
+
+Based on the image, the worker appears to be wearing a hard hat and a reflective vest. However, due to the resolution, it's difficult to confirm the presence of all the required PPE items.
+
+**Compliance output: PPE_UNKNOWN** (cannot determine PPE status for all items).
+OPENAI_PPE_PROMPT_1_TEMPLATE took 19.53s with Frame (Frame)2024.08.04 - TDC08870 - AES - PPE (Optical).png
+
+Frame (Frame)2024.07.22 - AES - TDC00870 - PPE.png
+
+Based on the image:
+
+The person on the right is wearing a hard hat and a reflective vest. The person on the left, operating the machinery, appears to be wearing a helmet.
+
+However, I cannot confirm if all required PPE items (particularly the unknown) are being worn by each individual due to lack of visibility and clarity.
+
+**Compliance**: PPE_UNKNOWN (cannot determine PPE status for all required items).
+OPENAI_PPE_PROMPT_1_TEMPLATE took 19.24s with Frame (Frame)2024.07.22 - AES - TDC00870 - PPE.png
+
+Frame (Frame)2024.07.22 - AES - TDC00870 - PPE and dog.png
+
+Based on the image provided, it appears there is one person visible. This person seems to be wearing a hard hat and a safety vest. However, due to the image quality and distance, it is difficult to determine with certainty if all required PPE items are present (such as a "unknown" item mentioned).
+
+**Compliance: PPE_UNKNOWN**
+OPENAI_PPE_PROMPT_1_TEMPLATE took 18.51s with Frame (Frame)2024.07.22 - AES - TDC00870 - PPE and dog.png
+
+Frame (Frame)2024.07.22 - AES - TDC00870 - No PPE - 2.png
+
+I cannot determine the PPE status of individuals in this image due to the distance and resolution. Therefore, the compliance status is:
+
+3. PPE_UNKNOWN
+OPENAI_PPE_PROMPT_1_TEMPLATE took 17.35s with Frame (Frame)2024.07.22 - AES - TDC00870 - No PPE - 2.png
+
+Frame (Frame)PG&E - Allied - PG&E - Sanger_Sub - TDC08926 - 2023.10.27 - No PPE.png
+
+In the image, the individual does not appear to be wearing a helmet, hard hat, vest, safety vest, or reflective vest.
+
+**Compliance**: PPE_NON_COMPLIANT
+OPENAI_PPE_PROMPT_1_TEMPLATE took 17.48s with Frame (Frame)PG&E - Allied - PG&E - Sanger_Sub - TDC08926 - 2023.10.27 - No PPE.png
+
+Frame (Frame)AES Solverde - TDC08888 - PPE (Optical).png
+
+I cannot determine the PPE compliance status of the individuals in the image. Therefore, the compliance output is:
+
+**PPE_UNKNOWN**
+OPENAI_PPE_PROMPT_1_TEMPLATE took 18.33s with Frame (Frame)AES Solverde - TDC08888 - PPE (Optical).png
+
+Frame (Frame)2024.07.22 - AES - TDC00870 - PPE and No PPE.png
+
+Based on the image, it appears there is one person visible wearing a reflective vest and a hard hat. The other person is not clear enough to evaluate fully due to distance and obstacles.
+
+**Compliance**: PPE_UNKNOWN (cannot determine PPE status for all individuals present)
+OPENAI_PPE_PROMPT_1_TEMPLATE took 20.78s with Frame (Frame)2024.07.22 - AES - TDC00870 - PPE and No PPE.png
+
+Frame (Frame)PG&E - Allied - PG&E - Storey_Sub - TDC08926 - 2023.10.29 - PPE.png
+
+Based on the image provided, there are people present in a workplace environment. However, due to the distance and resolution, it is difficult to clearly determine if all individuals are wearing the specified PPE, including hard hats, vests, and other gear.
+
+**Compliance:** PPE_UNKNOWN (cannot determine PPE status)
+OPENAI_PPE_PROMPT_1_TEMPLATE took 25.12s with Frame (Frame)PG&E - Allied - PG&E - Storey_Sub - TDC08926 - 2023.10.29 - PPE.png
+
+Frame (Frame)AES Solverde - TDC08888 - PPE (Thermal).png
+
+I can't determine the personal protective equipment compliance from this image. The image shows a landscape with vehicles and some distant figures, but it's unclear if those are people or if they are wearing any PPE such as hard hats or vests. Therefore, the PPE status is unknown.
+
+Compliance: PPE_UNKNOWN
+OPENAI_PPE_PROMPT_1_TEMPLATE took 8.02s with Frame (Frame)AES Solverde - TDC08888 - PPE (Thermal).png
+
+Frame (Frame)Georgia Power - Clayton Yard - TDC08378 - 2024.06.005 - 10_32_00 - No PPE.png
+
+In the image, it is difficult to definitively determine if the individuals are wearing all the required PPE (hard hat, safety vest, etc.) due to the distance and resolution.
+
+**Compliance:** PPE_UNKNOWN
+
+This conclusion is made because the visibility and clarity are insufficient to verify each item of personal protective equipment on all individuals.
+OPENAI_PPE_PROMPT_1_TEMPLATE took 18.72s with Frame (Frame)Georgia Power - Clayton Yard - TDC08378 - 2024.06.005 - 10_32_00 - No PPE.png
+
+OPENAI_PPE_PROMPT_2_TEMPLATE
+
+Frame (Frame)2024.08.04 - TDC08870 - AES - PPE (Optical).png
+
+1. Compliance: PPE_COMPLIANT
+2. Missing PPE: None
+
+All visible individuals in the image appear to be wearing hard hats and reflective vests.
+OPENAI_PPE_PROMPT_2_TEMPLATE took 19.54s with Frame (Frame)2024.08.04 - TDC08870 - AES - PPE (Optical).png
+
+Frame (Frame)2024.07.22 - AES - TDC00870 - PPE.png
+
+1. Compliance: PPE_NON_COMPLIANT
+
+2. Missing PPE: The person on the left is missing a hard hat.
+OPENAI_PPE_PROMPT_2_TEMPLATE took 19.22s with Frame (Frame)2024.07.22 - AES - TDC00870 - PPE.png
+
+Frame (Frame)2024.07.22 - AES - TDC00870 - PPE and dog.png
+
+1. Compliance: PPE_COMPLIANT
+
+2. Missing PPE: None
+
+The person visible is wearing a hard hat and a reflective vest, fulfilling the required PPE items.
+OPENAI_PPE_PROMPT_2_TEMPLATE took 22.44s with Frame (Frame)2024.07.22 - AES - TDC00870 - PPE and dog.png
+
+Frame (Frame)2024.07.22 - AES - TDC00870 - No PPE - 2.png
+
+1. Compliance: **PPE_UNKNOWN**
+
+2. Missing PPE: The image is unclear due to distance and the quality, making it difficult to determine the presence of hard hats, vests, or other PPE.
+OPENAI_PPE_PROMPT_2_TEMPLATE took 19.49s with Frame (Frame)2024.07.22 - AES - TDC00870 - No PPE - 2.png
+
+Frame (Frame)PG&E - Allied - PG&E - Sanger_Sub - TDC08926 - 2023.10.27 - No PPE.png
+
+1. Compliance: PPE_NON_COMPLIANT
+
+2. Missing PPE: The individual in the image is not wearing a hard hat, helmet, hard-hat, hardhat, vest, safety vest, or reflective vest.
+OPENAI_PPE_PROMPT_2_TEMPLATE took 15.85s with Frame (Frame)PG&E - Allied - PG&E - Sanger_Sub - TDC08926 - 2023.10.27 - No PPE.png
+
+Frame (Frame)AES Solverde - TDC08888 - PPE (Optical).png
+
+1. Compliance: PPE_UNKNOWN
+
+2. Missing PPE: The image is taken from a distance and is not clear enough to determine if all individuals are wearing the required PPE items.
+OPENAI_PPE_PROMPT_2_TEMPLATE took 19.28s with Frame (Frame)AES Solverde - TDC08888 - PPE (Optical).png
+
+Frame (Frame)2024.07.22 - AES - TDC00870 - PPE and No PPE.png
+
+1. Compliance: PPE_UNKNOWN
+2. Missing PPE: Image is unclear due to the distance of the people, making it difficult to accurately determine if all PPE items are worn.
+OPENAI_PPE_PROMPT_2_TEMPLATE took 17.97s with Frame (Frame)2024.07.22 - AES - TDC00870 - PPE and No PPE.png
+
+Frame (Frame)PG&E - Allied - PG&E - Storey_Sub - TDC08926 - 2023.10.29 - PPE.png
+
+1. Compliance: PPE_UNKNOWN
+
+2. Missing PPE: The image is not clear enough to determine if the people are wearing the required PPE items.
+OPENAI_PPE_PROMPT_2_TEMPLATE took 17.11s with Frame (Frame)PG&E - Allied - PG&E - Storey_Sub - TDC08926 - 2023.10.29 - PPE.png
+
+Frame (Frame)AES Solverde - TDC08888 - PPE (Thermal).png
+
+1. Compliance: PPE_UNKNOWN
+2. Missing PPE: The image is unclear and does not allow for determination of PPE status due to no visible people detected.
+OPENAI_PPE_PROMPT_2_TEMPLATE took 7.32s with Frame (Frame)AES Solverde - TDC08888 - PPE (Thermal).png
+
+Frame (Frame)Georgia Power - Clayton Yard - TDC08378 - 2024.06.005 - 10_32_00 - No PPE.png
+
+1. Compliance: PPE_UNKNOWN
+2. Missing PPE: The image's resolution and distance make it difficult to determine the specifics of the PPE worn by individuals.
+OPENAI_PPE_PROMPT_2_TEMPLATE took 14.28s with Frame (Frame)Georgia Power - Clayton Yard - TDC08378 - 2024.06.005 - 10_32_00 - No PPE.png
+
+OPENAI_PPE_PROMPT_3
+
+Frame (Frame)2024.08.04 - TDC08870 - AES - PPE (Optical).png
+
+Compliance: PPE_COMPLIANT
+Missing PPE: None
+OPENAI_PPE_PROMPT_3 took 18.85s with Frame (Frame)2024.08.04 - TDC08870 - AES - PPE (Optical).png
+
+Frame (Frame)2024.07.22 - AES - TDC00870 - PPE.png
+
+Based on the provided frame:
+
+1. **Workplace Context**:
+   - The environment appears to be a construction or industrial site with fencing and dirt paths.
+   - There is a person operating machinery and another standing nearby.
+
+2. **Cropped Images/Full-Person Analysis**:
+   - The worker on the machinery is wearing a helmet but not clearly wearing a reflective vest.
+   - The worker standing is wearing both a helmet and a reflective vest.
+
+3. **PPE Compliance Determination**:
+   - **Compliance**: PPE_NON_COMPLIANT
+   - **Missing PPE**: No vest for the worker on the machinery
+
+The non-compliance is due to the absence of a reflective vest for the worker operating the machinery.
+OPENAI_PPE_PROMPT_3 took 23.44s with Frame (Frame)2024.07.22 - AES - TDC00870 - PPE.png
+
+Frame (Frame)2024.07.22 - AES - TDC00870 - PPE and dog.png
+
+Based on the analysis of the provided video frame:
+
+1. **Workplace Context**: This appears to be an open outdoor setting near a fenced-off area, possibly a construction site or similar work environment.
+
+2. **PPE Check for Worker**:
+   - The worker in the frame is wearing a safety helmet.
+   - The worker is wearing a reflective vest.
+
+3. **PPE Compliance Status**:
+   - **Compliance**: PPE_COMPLIANT
+   - **Missing PPE**: None
+
+The worker in the frame is compliant with PPE requirements, wearing both a safety helmet and a reflective vest.
+OPENAI_PPE_PROMPT_3 took 17.23s with Frame (Frame)2024.07.22 - AES - TDC00870 - PPE and dog.png
+
+Frame (Frame)2024.07.22 - AES - TDC00870 - No PPE - 2.png
+
+To assess PPE compliance in the provided frame, follow these steps:
+
+1. **Workplace Context**:
+   - The setting appears to be an industrial outdoor site, likely involving vehicle inspection or maintenance given the presence of trucks and a gated area.
+
+2. **Cropped Images Analysis**:
+   - As I cannot view the cropped images, analysis is based on the overall context of the full frame.
+   - Since there's no visibility of helmets or vests from this entire frame, further analysis of cropped images would be necessary for a conclusive assessment.
+
+3. **Compliance Status Determination**:
+   - **Compliance**: PPE_UNKNOWN
+   - **Missing PPE**: Unknown
+   - **Reason**: Unable to determine the presence of helmets and vests due to lack of details in the full frame.
+
+For more accurate results, detailed examination of cropped worker images is necessary to specifically check for helmet and vest presence.
+OPENAI_PPE_PROMPT_3 took 19.74s with Frame (Frame)2024.07.22 - AES - TDC00870 - No PPE - 2.png
+
+Frame (Frame)PG&E - Allied - PG&E - Sanger_Sub - TDC08926 - 2023.10.27 - No PPE.png
+
+Compliance: PPE_NON_COMPLIANT
+Missing PPE: No helmet and no vest for the worker
+OPENAI_PPE_PROMPT_3 took 14.89s with Frame (Frame)PG&E - Allied - PG&E - Sanger_Sub - TDC08926 - 2023.10.27 - No PPE.png
+
+Frame (Frame)AES Solverde - TDC08888 - PPE (Optical).png
+
+Based on the provided image, here’s the analysis:
+
+### Frame Analysis
+
+1. **Workplace Context:**
+   - The environment appears to be a solar panel installation site.
+   - Workers may be performing tasks related to solar panel maintenance or installation.
+
+2. **PPE Assessment (without cropped image verification):**
+   - **Helmets:** Generally expected due to outdoor work and potential hazards.
+   - **Reflective Vests:** Also expected for visibility, especially in a work zone with vehicles.
+
+3. **PPE Compliance:**
+
+   - **Compliance Status: PPE_UNKNOWN**
+   - **Missing PPE: Unknown**
+   - **Reason:** Unable to clearly determine the presence of helmets and vests due to the distance and resolution of the image.
+
+### Conclusion
+
+The image shows a work environment where PPE use is necessary, but the visibility of individual workers' PPE is unclear from the full frame alone. Further cropped images of individual workers would be required to assess compliance accurately.
+OPENAI_PPE_PROMPT_3 took 24.53s with Frame (Frame)AES Solverde - TDC08888 - PPE (Optical).png
+
+Frame (Frame)2024.07.22 - AES - TDC00870 - PPE and No PPE.png
+
+To analyze the frame for PPE compliance:
+
+### Workplace Context
+- **Environment:** Appears to be a construction or industrial site with equipment and a dirt surface.
+- **Workers:** Two visible workers in the frame.
+
+### PPE Analysis for Workers
+1. **Worker on Vehicle:**
+   - Presence of reflective vest: Unclear
+   - Presence of safety helmet: Unclear
+
+2. **Worker Walking:**
+   - Reflective vest: Visible
+   - Safety helmet: Visible
+
+### Frame PPE Compliance Status
+- **Compliance:** PPE_UNKNOWN
+- **Missing PPE:** Unknown for the worker on the vehicle
+- **Reason:** Unclear visibility due to distance and angle
+
+### Summary
+- Worker walking demonstrates PPE compliance.
+- Worker on the vehicle’s PPE status is ambiguous due to unclear visibility.
+
+Overall, due to the ambiguity for one worker, this frame is categorized as PPE_UNKNOWN.
+OPENAI_PPE_PROMPT_3 took 23.69s with Frame (Frame)2024.07.22 - AES - TDC00870 - PPE and No PPE.png
+
+Frame (Frame)PG&E - Allied - PG&E - Storey_Sub - TDC08926 - 2023.10.29 - PPE.png
+
+To determine PPE compliance from the provided frame:
+
+1. **Workplace Context**:
+   - The image shows a construction or utility site environment with visible machinery and infrastructure.
+
+2. **Worker Analysis**:
+   - There are two workers visible in the frame.
+   - They appear to be involved in tasks related to site maintenance or construction.
+
+3. **PPE Check**:
+   - Safety Helmets: It is unclear from the image whether the workers are wearing helmets due to distance and resolution.
+   - Reflective Vests: Similarly, it is not clearly discernible if the workers are wearing high-visibility vests.
+
+4. **Compliance Determination**:
+   - Compliance: PPE_UNKNOWN
+   - Missing PPE: Unknown
+   - Reason: Image resolution and distance make it difficult to confirm the presence of helmets and vests.
+
+Structured Format:
+
+- **Compliance**: PPE_UNKNOWN
+- **Missing PPE**: Unknown
+- **Reason**: Image resolution and distance make PPE check ambiguous.
+OPENAI_PPE_PROMPT_3 took 24.45s with Frame (Frame)PG&E - Allied - PG&E - Storey_Sub - TDC08926 - 2023.10.29 - PPE.png
+
+Frame (Frame)AES Solverde - TDC08888 - PPE (Thermal).png
+
+To determine the PPE compliance in the provided video frame, I'll need to analyze the image for the presence of workers and their PPE. Here’s a step-by-step analysis:
+
+### Workplace Context
+- The frame shows a construction or industrial site, possibly with solar panels.
+- Multiple vehicles are visible, indicating a workspace that may require safety precautions.
+
+### Cropped Images Analysis
+- **Full-Person Regions**: I cannot view individual persons due to the wide-frame context, but if cropped images from an object detection model were provided, they'd be examined for PPE.
+
+### PPE Compliance Evaluation
+1. **Compliance Status**: Based on this frame alone:
+   - **Compliance**: PPE_UNKNOWN
+   - **Reason**: Potential workers present, but due to image quality and absence of close-up cropped images, determining the presence of helmets or vests is not possible.
+
+2. **Structured Report**:
+   - Compliance: PPE_UNKNOWN
+   - Missing PPE: Unknown
+   - Reason: Unable to view workers closely due to the wide-frame context and image clarity.
+
+Additional full-person cropped images would be needed for a more precise assessment.
+OPENAI_PPE_PROMPT_3 took 17.40s with Frame (Frame)AES Solverde - TDC08888 - PPE (Thermal).png
+
+Frame (Frame)Georgia Power - Clayton Yard - TDC08378 - 2024.06.005 - 10_32_00 - No PPE.png
+
+I'm unable to assess PPE compliance without the cropped images of individual workers. Please provide the cropped images for analysis, which should show the workers clearly so I can determine if they are wearing safety helmets and reflective vests.
+OPENAI_PPE_PROMPT_3 took 16.80s with Frame (Frame)Georgia Power - Clayton Yard - TDC08378 - 2024.06.005 - 10_32_00 - No PPE.png
+
+OPENAI_PPE_PROMPT_4
+
+Frame (Frame)2024.08.04 - TDC08870 - AES - PPE (Optical).png
+
+Yes, the person visible is wearing both a hard hat and a safety vest.
+OPENAI_PPE_PROMPT_4 took 16.42s with Frame (Frame)2024.08.04 - TDC08870 - AES - PPE (Optical).png
+
+Frame (Frame)2024.07.22 - AES - TDC00870 - PPE.png
+
+No.
+
+The person on the small vehicle is not wearing a hard hat; they are wearing a safety vest. The person standing on the ground is wearing both a hard hat and a safety vest.
+OPENAI_PPE_PROMPT_4 took 16.86s with Frame (Frame)2024.07.22 - AES - TDC00870 - PPE.png
+
+Frame (Frame)2024.07.22 - AES - TDC00870 - PPE and dog.png
+
+Yes, the person visible in the image is wearing a hard hat and a safety vest.
+OPENAI_PPE_PROMPT_4 took 15.95s with Frame (Frame)2024.07.22 - AES - TDC00870 - PPE and dog.png
+
+Frame (Frame)2024.07.22 - AES - TDC00870 - No PPE - 2.png
+
+No. There are two people visible. The first person on the left does not appear to be wearing a hard hat or a safety vest. The second person on the right seems to be wearing a hard hat but not a safety vest.
+OPENAI_PPE_PROMPT_4 took 17.24s with Frame (Frame)2024.07.22 - AES - TDC00870 - No PPE - 2.png
+
+Frame (Frame)PG&E - Allied - PG&E - Sanger_Sub - TDC08926 - 2023.10.27 - No PPE.png
+
+No.
+
+The person in the image is not wearing a hard hat or a safety vest. They are dressed in a dark shirt and jeans.
+OPENAI_PPE_PROMPT_4 took 15.56s with Frame (Frame)PG&E - Allied - PG&E - Sanger_Sub - TDC08926 - 2023.10.27 - No PPE.png
+
+Frame (Frame)AES Solverde - TDC08888 - PPE (Optical).png
+
+No, not all people are wearing both a hard hat and safety vest.
+
+- The individuals walking together on the road seem to be wearing safety vests, but it is unclear if they all have hard hats.
+- The people working near the solar panels appear to have safety vests, but it is uncertain if each has a hard hat due to the image resolution.
+
+Overall, while safety vests are visible, the hard hats are not clearly visible on everyone.
+OPENAI_PPE_PROMPT_4 took 21.62s with Frame (Frame)AES Solverde - TDC08888 - PPE (Optical).png
+
+Frame (Frame)2024.07.22 - AES - TDC00870 - PPE and No PPE.png
+
+Yes, both people appear to be wearing a hard hat and a safety vest. One is visible near a vehicle, and the other is walking across a dirt area.
+OPENAI_PPE_PROMPT_4 took 20.87s with Frame (Frame)2024.07.22 - AES - TDC00870 - PPE and No PPE.png
+
+Frame (Frame)PG&E - Allied - PG&E - Storey_Sub - TDC08926 - 2023.10.29 - PPE.png
+
+No.
+
+There are two people visible:
+
+1. The person on the left appears to be wearing a hard hat but no safety vest.
+2. The person on the right appears to be wearing both a hard hat and a safety vest.
+OPENAI_PPE_PROMPT_4 took 20.79s with Frame (Frame)PG&E - Allied - PG&E - Storey_Sub - TDC08926 - 2023.10.29 - PPE.png
+
+Frame (Frame)AES Solverde - TDC08888 - PPE (Thermal).png
+
+Unsure. The image quality makes it difficult to determine if the people are wearing hard hats and safety vests. There are green boxes indicating possible people, but the resolution is too low to clearly see the personal protective equipment.
+OPENAI_PPE_PROMPT_4 took 9.11s with Frame (Frame)AES Solverde - TDC08888 - PPE (Thermal).png
+
+Frame (Frame)Georgia Power - Clayton Yard - TDC08378 - 2024.06.005 - 10_32_00 - No PPE.png
+
+No.
+
+The people in the image are not clearly wearing both a hard hat and a safety vest. Some appear to be wearing hard hats, but it’s unclear whether all are wearing safety vests due to distance and image clarity.
+OPENAI_PPE_PROMPT_4 took 17.25s with Frame (Frame)Georgia Power - Clayton Yard - TDC08378 - 2024.06.005 - 10_32_00 - No PPE.png
+
+OPENAI_PPE_PROMPT_5
+
+Frame (Frame)2024.08.04 - TDC08870 - AES - PPE (Optical).png
+
+Yes
+OPENAI_PPE_PROMPT_5 took 17.20s with Frame (Frame)2024.08.04 - TDC08870 - AES - PPE (Optical).png
+
+Frame (Frame)2024.07.22 - AES - TDC00870 - PPE.png
+
+Yes
+OPENAI_PPE_PROMPT_5 took 16.14s with Frame (Frame)2024.07.22 - AES - TDC00870 - PPE.png
+
+Frame (Frame)2024.07.22 - AES - TDC00870 - PPE and dog.png
+
+Yes.
+OPENAI_PPE_PROMPT_5 took 17.51s with Frame (Frame)2024.07.22 - AES - TDC00870 - PPE and dog.png
+
+Frame (Frame)2024.07.22 - AES - TDC00870 - No PPE - 2.png
+
+Unsure.
+OPENAI_PPE_PROMPT_5 took 15.36s with Frame (Frame)2024.07.22 - AES - TDC00870 - No PPE - 2.png
+
+Frame (Frame)PG&E - Allied - PG&E - Sanger_Sub - TDC08926 - 2023.10.27 - No PPE.png
+
+No.
+OPENAI_PPE_PROMPT_5 took 18.23s with Frame (Frame)PG&E - Allied - PG&E - Sanger_Sub - TDC08926 - 2023.10.27 - No PPE.png
+
+Frame (Frame)AES Solverde - TDC08888 - PPE (Optical).png
+
+Unsure.
+OPENAI_PPE_PROMPT_5 took 17.61s with Frame (Frame)AES Solverde - TDC08888 - PPE (Optical).png
+
+Frame (Frame)2024.07.22 - AES - TDC00870 - PPE and No PPE.png
+
+Yes.
+OPENAI_PPE_PROMPT_5 took 17.51s with Frame (Frame)2024.07.22 - AES - TDC00870 - PPE and No PPE.png
+
+Frame (Frame)PG&E - Allied - PG&E - Storey_Sub - TDC08926 - 2023.10.29 - PPE.png
+
+No
+OPENAI_PPE_PROMPT_5 took 15.50s with Frame (Frame)PG&E - Allied - PG&E - Storey_Sub - TDC08926 - 2023.10.29 - PPE.png
+
+Frame (Frame)AES Solverde - TDC08888 - PPE (Thermal).png
+
+Unsure.
+OPENAI_PPE_PROMPT_5 took 6.65s with Frame (Frame)AES Solverde - TDC08888 - PPE (Thermal).png
+
+Frame (Frame)Georgia Power - Clayton Yard - TDC08378 - 2024.06.005 - 10_32_00 - No PPE.png
+
+Unsure.
+OPENAI_PPE_PROMPT_5 took 14.78s with Frame (Frame)Georgia Power - Clayton Yard - TDC08378 - 2024.06.005 - 10_32_00 - No PPE.png
