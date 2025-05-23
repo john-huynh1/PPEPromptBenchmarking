@@ -10,12 +10,34 @@ from src.tools import calculate_performance
 from src.ppe_prompt_benchmarking import constants
 import os
 import openai
-import numpy as np
-import cv2
+
 import time
 
 ppe_prompts = constants.ppe_prompts
-data_directory = Path('/Users/john.huynh/Personal/Projects/PPEPromptBenchmarking/data')
+
+def find_project_root(current_path: str | Path | None = None) -> Path:
+    """Finds the project root directory by checking for common project files.
+
+    Args:
+        current_path: The starting path (defaults to the current working directory).
+
+    Returns:
+        The Path object of the project root, or Path('.') if not found.
+    """
+    project_files = [".git", "setup.py", "requirements.txt", "src"]
+    if current_path is None:
+        current_path = Path.cwd()
+    elif isinstance(current_path, str):
+        current_path = Path(current_path)
+
+    if any((current_path / file).exists() for file in project_files):
+        return current_path
+    for parent in current_path.parents:
+        if any((parent / file).exists() for file in project_files):
+            return parent
+    return Path()  # Return . instead of Path() for clarity
+
+data_directory = find_project_root() / 'data'
 frames_directory = data_directory / 'frames'
 def default_prompts(output_csv: str):
     with open(output_csv, 'w', newline='', encoding='utf-8') as csvfile:
@@ -78,16 +100,6 @@ def encode_image(image_path):
     with open(image_path, "rb") as image_file:
         return base64.b64encode(image_file.read()).decode('utf-8')
 
-
-def get_boolean_input(prompt):
-    while True:
-        user_input = input(prompt).lower()
-        if user_input == "yes":
-            return True
-        elif user_input == "false":
-            return False
-        else:
-            print("Invalid input. Please enter 'Yes' or 'No'.")
 
 if __name__ == "__main__":
     _output_csv = sys.argv[1]
