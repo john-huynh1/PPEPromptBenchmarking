@@ -2,7 +2,6 @@ import base64
 import csv
 import sys
 from pathlib import Path
-from typing import Any
 
 from dotenv import load_dotenv
 
@@ -40,33 +39,94 @@ def find_project_root(current_path: str | Path | None = None) -> Path:
 data_directory = find_project_root() / 'data'
 frames_directory = data_directory / 'frames'
 def default_prompts(output_csv: str):
-    with open(output_csv, 'w', newline='', encoding='utf-8') as csvfile:
-        writer = csv.writer(csvfile)
+    with open("output.txt", 'w', newline='', encoding='utf-8') as file:
 
         image_extensions = {'.jpg', '.jpeg', '.png', '.gif', '.bmp', '.tiff', '.webp'}
 
         image_paths = [file for file in frames_directory.iterdir() if file.suffix.lower() in image_extensions]
-
+        ground_truth = []
+        prediction = []
+        compliance_strings = ["PPE_COMPLIANT", "yes", "Yes"]
+        noncompliance_strings = ["PPE_NON_COMPLIANT", "no", "No", "Unsure", "Unsure"]
         for key, prompt_text in ppe_prompts.items():
-            print(key, "\n")
+            file.write(f'{key}\n')
             for img_path in image_paths:
-                send_prompt_and_frame(prompt_text, img_path)
+                file.write('-----------------------------------------------------------------------------------------------------------------------\n')
+                filename = img_path.name
+                if "no ppe" in filename.lower():
+                    ground_truth.append(0)
+                else:
+                    ground_truth.append(1)
+                filename = img_path.name
+                file.write(f'Frame {filename} \n')
+                start_time = time.perf_counter()
+                completion = send_prompt_and_frame(prompt_text, img_path)
+                file.write(f'Result \"{completion}\" \n')
+                duration = time.perf_counter() - start_time
+                file.write(f"{key} took"
+                      f" {duration:.2f}s with Frame {filename} \n")
+                file.write('-----------------------------------------------------------------------------------------------------------------------\n')
+                if any(text in completion for text in compliance_strings):
+                    prediction.append(1)
+                elif any(text in completion for text in noncompliance_strings):
+                    prediction.append(0)
+                else:
+                    prediction.append(0)
+            cm = calculate_performance.create_confusion_matrix(ground_truth, prediction)
+            file.write(f"Confusion matrix:\n {cm}")
+            precision = calculate_performance.compute_precision(cm)
+            file.write(f"Precision{precision:.2f} \n")
+            recall = calculate_performance.compute_recall(cm)
+            file.write(f"Recall{recall:.2f} \n")
+            f1 = calculate_performance.compute_f1(precision, recall)
+            file.write(f"F1-Score{f1:.2f} \n")
 def custom_prompt(prompt_text: str):
-    image_extensions = {'.jpg', '.jpeg', '.png', '.gif', '.bmp', '.tiff', '.webp'}
+    with open("output.txt", 'w', newline='', encoding='utf-8') as file:
+        image_extensions = {'.jpg', '.jpeg', '.png', '.gif', '.bmp', '.tiff', '.webp'}
 
-    image_paths = [file for file in frames_directory.iterdir() if file.suffix.lower() in image_extensions]
-
-    for img_path in image_paths:
-        send_prompt_and_frame(prompt_text, img_path)
+        image_paths = [file for file in frames_directory.iterdir() if file.suffix.lower() in image_extensions]
+        ground_truth = []
+        prediction = []
+        compliance_strings = ["PPE_COMPLIANT", "yes", "Yes"]
+        noncompliance_strings = ["PPE_NON_COMPLIANT", "no", "No", "Unsure", "Unsure"]
+        for img_path in image_paths:
+            print(
+                '-----------------------------------------------------------------------------------------------------------------------')
+            filename = img_path.name
+            if "no ppe" in filename.lower():
+                ground_truth.append(0)
+            else:
+                ground_truth.append(1)
+            print(f'Frame {filename}')
+            start_time = time.perf_counter()
+            completion = send_prompt_and_frame(prompt_text, img_path)
+            print(f'Result \"{completion}\"')
+            duration = time.perf_counter() - start_time
+            print(f"Custom prompt took"
+                       f" {duration:.2f}s with Frame {filename}")
+            print(
+                '----------------------------------------------------------------------------------------------------------------------- \n')
+            if any(text in completion for text in compliance_strings):
+                prediction.append(1)
+            elif any(text in completion for text in noncompliance_strings):
+                prediction.append(0)
+            else:
+                prediction.append(0)
+        cm = calculate_performance.create_confusion_matrix(ground_truth, prediction)
+        print(f"Confusion matrix:\n {cm}")
+        precision = calculate_performance.compute_precision(cm)
+        print(f"Precision{precision:.6f}")
+        recall = calculate_performance.compute_recall(cm)
+        print(f"Recall{recall:.6f}")
+        f1 = calculate_performance.compute_f1(precision, recall)
+        print(f"F1-Score{f1:.6f}")
 def send_prompt_and_frame(prompt_text: str , frame_path: Path):
-    filename = frame_path.name
-    print(f"Frame {filename} \n")
-    start_time = time.perf_counter()
     completion = openai_query(prompt_text, frame_path)
-    print(completion.choices[0].message.content)
-    duration = time.perf_counter() - start_time
-    print(f"Prompt took"
-          f" {duration:.2f}s with Frame {filename} \n")
+    return completion.choices[0].message.content
+def compute_confusion_matrix(ground_truth: list, prediction: list):
+    cm = calculate_performance.create_confusion_matrix(ground_truth, prediction)
+
+
 def openai_query(prompt_text: str, frame_path: Path):
     load_dotenv()
     openai.api_key = os.getenv("OPENAI_API_KEY")
